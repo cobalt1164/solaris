@@ -1,0 +1,25 @@
+# Build directories
+build/
+bin/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+CMakeSettings.json
+CMakeUserPresets.json
+cmake_install.cmake
+Makefile
+
+# Qt Creator/Editor-specific files
+*.user
+*.app
+.qt/
+.qtcreator/
+.vscode/
+.idea/
+.vs/
+out/
