@@ -29,9 +29,21 @@ include_directories(src)
 
 add_executable(solaris
     src/main.cpp
+    src/CPU.cpp
+    src/CPU_Thumb.cpp
+    src/CPU_ARM.cpp
+    src/CPU.h
 )
 
 target_link_libraries(solaris PRIVATE ${QT_LIBRARIES})
+
+add_executable(test_cpu
+    tests/test_cpu.cpp
+    src/CPU.cpp
+    src/CPU_Thumb.cpp
+    src/CPU_ARM.cpp
+    src/CPU.h
+)
 
 if (WIN32)
     set_target_properties(solaris PROPERTIES
